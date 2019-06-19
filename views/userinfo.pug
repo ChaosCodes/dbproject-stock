@@ -1,19 +1,28 @@
 extend layout2
 
 block content
-  .userinfo
+  script(src = '/javascripts/userinfo.js')
+  link(rel='stylesheet', href='/stylesheets/background.css')
+  .info
+    //- .info-content
+    //- .userinfo
     .icon
       img(src="/resource/mine_fill.svg")
     |       
     .info-content
-      p
-        | 用户名: #{username}
+      p.description
+        | 用户名: 
+        span#username 
+        |
         br
-        |            邮箱: #{useremail}
+        |            邮箱: 
+        span#useremail 
+        |
         br
-        |            自选股数量: #{userstocknum}
+        |            自选股数量:
+        span#prefer 
       |         
-      a.smalllink(href="#fakelink") 查看我的自选股
-      br
-      |         
-      a.smalllink(href="#fakelink") 添加自选股
+      //- a.smalllink(href="#fakelink") 查看我的自选股
+      //- br
+      //- |         
+      //- a.smalllink(href="#fakelink") 添加自选股

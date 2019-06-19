@@ -1,7 +1,6 @@
 extends layout1
 
 block scripts
-  script(src = '/javascripts/jquery-3.2.1.min.js')
   script(src = '/javascripts/signup.js')
   script(src="https://cdn.bootcss.com/limonte-sweetalert2/7.21.1/sweetalert2.js")
   link(rel='stylesheet', href='https://cdn.bootcss.com/limonte-sweetalert2/7.21.1/sweetalert2.css')
@@ -35,7 +34,7 @@ block content
           |
           input#confpassword.form-control.signup-field.signup-form(type="password", value="", placeholder="确认密码")
         |
-        a.btn.btn-primary.btn-lg.btn-block(href="#") 注册
+        a#signupbtn.btn.btn-primary.btn-lg.btn-block(href="#") 注册
 
 
 
